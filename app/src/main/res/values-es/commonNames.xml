@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name19">Mbigua</string>
+    <string name="name23">Garza blanca (Guyratî)</string>
+    <string name="name29">Flauta del sol (Kuarahy mimby)</string>
+    <string name="name32">Garza bruja (Tajasu guyra)</string>
+    <string name="name35">Cigüeña americana (Mbaguari)</string>
+    <string name="name37">Bandurria mora (Kurukáu hovy)</string>
+    <string name="name40">Cuervillo cara pelada (Karâu’i rova pytâ)</string>
+    <string name="name57">Alita azul (Ype kutiri)</string>
+    <string name="name67">Cuervo negro (Yryvu hû)</string>
+    <string name="name82">Taguató común (Yndaje)</string>
+    <string name="name98">Águila negra (Yryvutinga)</string>
+    <string name="name100">Caracolero (Taguato jatyta)</string>
+    <string name="name146">Carau (Karâu)</string>
+    <string name="name153">Tero Tero (Tetéu)</string>
+    <string name="name156">Jacana (Aguapeaso)</string>
+    <string name="name174">Becasina chica (Jakavere)</string>
+    <string name="name224">Anó chico (Ano)</string>
+    <string name="name240">Lechucita vizcachera (Urukurea chichi)</string>
+    <string name="name277">Picaflor verde (Mainumby hovyû)</string>
+    <string name="name278">Picaflor bronceado (Kuarahy áva)</string>
+    <string name="name294">Martín pescador mediano (Jagua kati)</string>
+    <string name="name309">Carpintero campestre (Ypekû ñu)</string>
+    <string name="name343">Hornero (Ogaraity)</string>
+    <string name="name348">Chotoy (Titisiri)</string>
+    <string name="name369">Espinero grande (Añumby pytâ)</string>
+    <string name="name387">Batará rayado (Che oro para)</string>
+    <string name="name446">Pico de plata (Sevo’i guasu)</string>
+    <string name="name447">Viudita blanca (Membei)</string>
+    <string name="name454">Pitogüé común (Mita jaryi)</string>
+    <string name="name458">Suirirí real (Suiriri guasu)</string>
+    <string name="name488">Monjita blanca (Yrupero)</string>
+    <string name="name534">Golondrina parda (Taperâ)</string>
+    <string name="name549">Calandria grande (Guyra ñe’engatu)</string>
+    <string name="name617">Cardenal (Guyra tiri)</string>
+    <string name="name631">Corbatita dominó</string>
+    <string name="name639">Corbatita blanco</string>
+    <string name="name647">Verdón (Havia Estero)</string>
+    <string name="name667">Tordo renegrido (Guyraû)</string>
+    <string name="name669">Varillero negro (Guyra tagua)</string>
+    <string name="name677">Federal (Guyrau pyta)</string>
+</resources>

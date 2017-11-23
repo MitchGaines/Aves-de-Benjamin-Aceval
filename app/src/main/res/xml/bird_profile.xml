@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated="2017-03-30T11:15:02">
+<BIRD_PROFILE>
+    <ID>19</ID>
+    <SCIENTIFIC_NAME>Phalacrocorax brasilianus</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>23</ID>
+    <SCIENTIFIC_NAME>Ardea alba</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>29</ID>
+    <SCIENTIFIC_NAME>Syrigma sibilatrix</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>32</ID>
+    <SCIENTIFIC_NAME>Nycticorax nycticorax</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>35</ID>
+<SCIENTIFIC_NAME>Ciconia maguari</SCIENTIFIC_NAME>
+<BIRD_CALL>Ehehe-ehehe</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>37</ID>
+    <SCIENTIFIC_NAME>Theristicus caerulescens</SCIENTIFIC_NAME>
+    <BIRD_CALL>pipipipipipipipi</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>40</ID>
+    <SCIENTIFIC_NAME>Phimosus infuscatus</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>57</ID>
+    <SCIENTIFIC_NAME>Amazonetta brasiliensis</SCIENTIFIC_NAME>
+    <BIRD_CALL>Pi..uí..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>67</ID>
+    <SCIENTIFIC_NAME>Coragyps atratus</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>82</ID>
+    <SCIENTIFIC_NAME>Buteo magnirostris (Rupornis magnirostris)</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>98</ID>
+<SCIENTIFIC_NAME>Buteogallus urubitinga</SCIENTIFIC_NAME>
+<BIRD_CALL>Ooo-wheeeeee</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>100</ID>
+    <SCIENTIFIC_NAME>Rostrhamus sociabilis</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>146</ID>
+<SCIENTIFIC_NAME>Aramus guarauna</SCIENTIFIC_NAME>
+<BIRD_CALL>Kerr-rr-rrowh</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>153</ID>
+<SCIENTIFIC_NAME>Vanellus chilensis</SCIENTIFIC_NAME>
+<BIRD_CALL>teu..teu..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>156</ID>
+<SCIENTIFIC_NAME>Jacana jacana</SCIENTIFIC_NAME>
+<BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>174</ID>
+    <SCIENTIFIC_NAME>Gallinago paraguaiae</SCIENTIFIC_NAME>
+    <BIRD_CALL>Kaaa kó..kaaa koó..kaaa kó..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>224</ID>
+    <SCIENTIFIC_NAME>Crotophaga ani</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>240</ID>
+    <SCIENTIFIC_NAME>Athene cunicularia</SCIENTIFIC_NAME>
+    <BIRD_CALL>Pyie..kekeke..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>277</ID>
+    <SCIENTIFIC_NAME>Chlorostilbon aureoventris</SCIENTIFIC_NAME>
+    <BIRD_CALL>tzr-tzr-tzr-tzr-tzr</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>278</ID>
+    <SCIENTIFIC_NAME>Hylocharis chrysura</SCIENTIFIC_NAME>
+    <BIRD_CALL>ii-ii-ii-ii-ii-ii-ii</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>294</ID>
+    <SCIENTIFIC_NAME>Chloroceryle amazona</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>309</ID>
+    <SCIENTIFIC_NAME>Colaptes campestris</SCIENTIFIC_NAME>
+    <BIRD_CALL>Kuik.. / Uit..uit..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+<ID>343</ID>
+<SCIENTIFIC_NAME>Furnarius rufus</SCIENTIFIC_NAME>
+<BIRD_CALL>Kweep..kweep..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>348</ID>
+    <SCIENTIFIC_NAME>Schoeniophylax phryganophila</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>369</ID>
+    <SCIENTIFIC_NAME>Phacellodomus ruber</SCIENTIFIC_NAME>
+    <BIRD_CALL>Check-check</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>387</ID>
+    <SCIENTIFIC_NAME>Thamnophilus doliatus</SCIENTIFIC_NAME>
+    <BIRD_CALL>Fío..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>446</ID>
+    <SCIENTIFIC_NAME>Hymenops perspicillatus</SCIENTIFIC_NAME>
+    <BIRD_CALL>Zheeee zheeee</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>447</ID>
+    <SCIENTIFIC_NAME>Fluvicola albiventer</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>454</ID>
+    <SCIENTIFIC_NAME>Pitangus sulphuratus</SCIENTIFIC_NAME>
+    <BIRD_CALL>Pito / Güé</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>458</ID>
+    <SCIENTIFIC_NAME>Tyrannus melancholicus</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>488</ID>
+    <SCIENTIFIC_NAME>Xolmis irupero</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>534</ID>
+    <SCIENTIFIC_NAME>Progne tapera</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>549</ID>
+    <SCIENTIFIC_NAME>Mimus saturninus</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>617</ID>
+    <SCIENTIFIC_NAME>Paroaria coronata</SCIENTIFIC_NAME>
+    <BIRD_CALL>Tchew tweet chuu tweet chuwiit tuup tweet chuu</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>631</ID>
+    <SCIENTIFIC_NAME>Sporophila collaris</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>639</ID>
+    <SCIENTIFIC_NAME>Sporophila leucoptera</SCIENTIFIC_NAME>
+    <BIRD_CALL>Fuiiit..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>647</ID>
+    <SCIENTIFIC_NAME>Embernagra platensis </SCIENTIFIC_NAME>
+    <BIRD_CALL>Chip..</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>667</ID>
+    <SCIENTIFIC_NAME>Molothrus bonariensis</SCIENTIFIC_NAME>
+    <BIRD_CALL>---</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>669</ID>
+    <SCIENTIFIC_NAME>Agelaius cyanopus</SCIENTIFIC_NAME>
+    <BIRD_CALL>Shr r le</BIRD_CALL>
+</BIRD_PROFILE>
+<BIRD_PROFILE>
+    <ID>677</ID>
+    <SCIENTIFIC_NAME>Amblyramphus holosericeus</SCIENTIFIC_NAME>
+    <BIRD_CALL>Cleer-cleer-clur, clulululu</BIRD_CALL>
+</BIRD_PROFILE>
+</dataroot>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name19">Neotropic Cormorant</string>
+    <string name="name23">Great Egret</string>
+    <string name="name29">Whistling Heron</string>
+    <string name="name32">Black-crowned Night-heron</string>
+    <string name="name35">Maguari Stork</string>
+    <string name="name37">Plumbeous Ibis</string>
+    <string name="name40">Bare-faced Ibis</string>
+    <string name="name57">Brazilian Duck</string>
+    <string name="name67">Black Vulture</string>
+    <string name="name82">Roadside Hawk</string>
+    <string name="name98">Great Black-hawk</string>
+    <string name="name100">Snail Kite</string>
+    <string name="name146">Limpkin</string>
+    <string name="name153">Southern Lapwing</string>
+    <string name="name156">Wattled Jacana</string>
+    <string name="name174">Common Snipe</string>
+    <string name="name224">Smooth-billed Ani</string>
+    <string name="name240">Burrowing Owl</string>
+    <string name="name277">Glittering-bellied Emerald Hummingbird</string>
+    <string name="name278">Gilded Sapphire Hummingbird</string>
+    <string name="name294">Amazon Kingfisher</string>
+    <string name="name309">Field Flicker</string>
+    <string name="name348">Chotoy Spinetail</string>
+    <string name="name343">Rufous Hornero</string>
+    <string name="name369">Greater Thornbird</string>
+    <string name="name387">Barred Antshrike</string>
+    <string name="name446">Spectacled Tyrant</string>
+    <string name="name447">Black-backed Water-tyrant</string>
+    <string name="name454">Great Kiskadee</string>
+    <string name="name458">Tropical Kingbird</string>
+    <string name="name488">White Monjita</string>
+    <string name="name534">Brown-chested Martin</string>
+    <string name="name549">Chalk-browed Mockingbird</string>
+    <string name="name617">Red-crested Cardinal</string>
+    <string name="name631">Rusty-collared Seedeater</string>
+    <string name="name639">White-bellied Seedeater</string>
+    <string name="name647">Great Pampa-finch</string>
+    <string name="name667">Shiny Cowbird</string>
+    <string name="name669">Unicolored Blackbird</string>
+    <string name="name677">Scarlet-headed Blackbird</string>
+</resources>
