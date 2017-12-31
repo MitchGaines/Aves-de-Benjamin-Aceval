@@ -43,7 +43,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
     @Override
     //Handle clicks on the toolbar.
-    //Manejar a cualqier click en el toolbar.
+    //Manejar a cualquier click en el toolbar.
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()) {
             case R.id.action_settings:
