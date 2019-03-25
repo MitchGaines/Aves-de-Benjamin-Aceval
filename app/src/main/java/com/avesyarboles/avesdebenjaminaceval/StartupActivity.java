@@ -8,28 +8,24 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * Description:
+ *  This class handles what happens on app startup. Is the
+ *  app opening for the first time? Or has someone used this
+ *  before?
+ *
+ *  UPDATE 3/25 by @Mitch Gaines
+ *      I have removed a lot of funcitonality here. No reason
+ *      to get user name so this simply bypasses to main
+ *      activity state.
+ */
 public class StartupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_startup);
-
-        Button continueButton = (Button)findViewById(R.id.continueButton);
-        continueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText nameET = (EditText)findViewById(R.id.nameET);
-                if(nameET.getText().toString().equals("")){
-                    Toast.makeText(getApplicationContext(),R.string.name_empty_message,Toast.LENGTH_LONG).show();
-                }
-                else {
-                    Intent returnIntent = new Intent();
-                    returnIntent.putExtra("name", nameET.getText().toString());
-                    setResult(RESULT_OK, returnIntent);
-                    finish();
-                }
-            }
-        });
+        Intent returnIntent = new Intent();
+        setResult(RESULT_OK, returnIntent);
+        finish();
     }
 }

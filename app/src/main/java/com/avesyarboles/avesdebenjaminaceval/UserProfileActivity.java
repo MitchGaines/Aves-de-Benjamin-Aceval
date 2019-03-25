@@ -24,8 +24,6 @@ public class UserProfileActivity extends AppCompatActivity {
     private final String USER_INFO_TABLE_NAME = "user_info";
     private final String BIRD_SEEN_NAME = "bird_seen";
 
-    private String username;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,20 +31,11 @@ public class UserProfileActivity extends AppCompatActivity {
 
         SQLiteDatabase myDB = loadAndUpdateDB();
         Cursor userInfo = myDB.rawQuery("SELECT * FROM " + USER_INFO_TABLE_NAME + " WHERE ID=" + 0 + ";", null);
-        if(userInfo != null && userInfo.moveToFirst()) {
-            int profileColumn = userInfo.getColumnIndex("NAME");
-            username = userInfo.getString(profileColumn);
-        }else{
-            username = getString(R.string.name_placeholder);
-        }
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(R.string.user_profile_label);
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-
-        TextView usernameTV = (TextView)findViewById(R.id.usernameTV);
-        usernameTV.setText(username);
 
         int total = 0, seen = 0;
         Cursor profileRow = myDB.rawQuery("SELECT * FROM " + BIRD_SEEN_NAME + ";", null);
