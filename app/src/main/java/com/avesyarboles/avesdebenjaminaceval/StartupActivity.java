@@ -15,7 +15,7 @@ import android.widget.Toast;
  *  before?
  *
  *  UPDATE 3/25 by @Mitch Gaines
- *      I have removed a lot of funcitonality here. No reason
+ *      I have removed a lot of functionality here. No reason
  *      to get user name so this simply bypasses to main
  *      activity state.
  */
