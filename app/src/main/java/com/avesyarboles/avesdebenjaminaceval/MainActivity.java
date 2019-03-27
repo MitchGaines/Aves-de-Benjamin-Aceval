@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private final String DATABASE_NAME = "BirdDatabase";
     private final String USER_INFO_TABLE_NAME = "user_info";
     private final String BIRD_TABLE_NAME = "bird_profiles";
+    private final String PLANT_TABLE_NAME = "plant_profiles";
     private final String BIRD_SEEN_NAME = "bird_seen";
 
     private final int WELCOME_INTENT_CODE = 504;
@@ -163,11 +164,62 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void populateTables(String TABLE_NAME, XmlResourceParser xml_resource) throws XmlPullParserException, IOException {
+        int event_type = xml_resource.getEventType();
+        int id = -1;
+        String scientific_name = "";
+        String bird_call = ""; //unused for plants, but making this more generic requires this
+        String tag_name = null;
+        while(event_type != XmlResourceParser.END_DOCUMENT){
+            switch(event_type) {
+                case XmlResourceParser.START_TAG:
+                    tag_name = xml_resource.getName();
+                    break;
+                case XmlPullParser.TEXT:
+                    String innerText = xml_resource.getText();
+                    if(tag_name != null){
+                       switch (tag_name) {
+                           case "ID":
+                               id = Integer.parseInt(innerText);
+                               break;
+                           case "SCIENTIFIC_NAME":
+                               scientific_name = innerText;
+                               break;
+                           case "BIRD_CALL":
+                               bird_call = innerText;
+                               break;
+                       }
+                    }
+                    break;
+                case XmlPullParser.END_TAG:
+                    tag_name = xml_resource.getName();
+                    if(tag_name.equals("BIRD_PROFILE")){
+                        myDB.execSQL("REPLACE INTO " + TABLE_NAME
+                                + " (ID, SCIENTIFIC_NAME, BIRD_CALL)"
+                                + " VALUES (" + id + ", '" + scientific_name + "', '" + bird_call + "');");
+
+                        myDB.execSQL("INSERT OR IGNORE INTO " + BIRD_SEEN_NAME
+                                + " (ID, SEEN)"
+                                + " VALUES (" + id + ", 0);");
+
+                    } else if(tag_name.equals("PLANT_PROFILE")){
+                        myDB.execSQL("REPLACE INTO " + TABLE_NAME
+                                + " (ID, SCIENTIFIC_NAME, BIRD_CALL)"
+                                + " VALUES (" + id + ", '" + scientific_name + "');");
+                    }
+                    break;
+            }
+            event_type = xml_resource.next();
+        }
+    }
+
     private SQLiteDatabase loadAndUpdateDB(){
         SQLiteDatabase myDB= this.openOrCreateDatabase(DATABASE_NAME, MODE_PRIVATE, null);
 
         XmlResourceParser birdProfileXML = getResources().getXml(R.xml.bird_profile);
+        XmlResourceParser plantProfileXML = getResources().getXml(R.xml.plant_profile);
 
+        // CREATION OF USER DATABASE
         myDB.execSQL("CREATE TABLE IF NOT EXISTS " + USER_INFO_TABLE_NAME + " (ID INTEGER PRIMARY KEY, NAME VARCHAR, LOGRO1 INT(4), LOGRO2 INT(4), LOGRO3 INT(4), LOGRO4 INT(4), LOGRO5 INT(4), LOGRO6 INT(4));");
         Cursor c = myDB.rawQuery("SELECT * FROM " + USER_INFO_TABLE_NAME , null);
         if (c == null || !c.moveToFirst()) {
@@ -177,64 +229,26 @@ public class MainActivity extends AppCompatActivity {
         }
 
         try {
-            /* Create a Table in the Database. */
+            /* Create Bird Table in the Database. */
             myDB.execSQL("CREATE TABLE IF NOT EXISTS " + BIRD_TABLE_NAME + " (ID INTEGER PRIMARY KEY, SCIENTIFIC_NAME VARCHAR, BIRD_CALL VARCHAR);");
             myDB.execSQL("DELETE FROM " + BIRD_TABLE_NAME);
 
-            /* Create a Table in the Database. */
+            /* Create Plant Table in the Database */
+            myDB.execSQL("CREATE TABLE IF NOT EXISTS " + PLANT_TABLE_NAME + " (ID INTEGER PRIMARY KEY, SCIENTIFIC_NAME VARCHAR) ");
+            myDB.execSQL("DELETE FROM " + PLANT_TABLE_NAME);
+
+            /* Create BIRD SEEN table in Database. */
             myDB.execSQL("CREATE TABLE IF NOT EXISTS " + BIRD_SEEN_NAME + " (ID INTEGER PRIMARY KEY, SEEN INT(4));");
 
-            /* Check to see if the table is empty, populate from xml if the table is empty */
-            //Cursor c = myDB.rawQuery("SELECT * FROM " + BIRD_TABLE_NAME , null);
-            int eventType = birdProfileXML.getEventType();
-            int id = -1;
-            String scientificName = "Género especie";
-            String birdCall = "canto...canto";
-            String tagName = null;
-            while (eventType != XmlResourceParser.END_DOCUMENT) {
+            populateTables(BIRD_TABLE_NAME, birdProfileXML);
+            populateTables(PLANT_TABLE_NAME, plantProfileXML);
 
-                switch (eventType) {
-                    case XmlResourceParser.START_TAG:
-                        tagName = birdProfileXML.getName();
-                        break;
-                    case XmlPullParser.TEXT:
-                        String innerText = birdProfileXML.getText();
-                        if (tagName != null) {
-                            switch (tagName) {
-                                case "ID":
-                                    id = Integer.parseInt(innerText);
-                                    break;
-                                case "SCIENTIFIC_NAME":
-                                    scientificName = innerText;
-                                    break;
-                                case "BIRD_CALL":
-                                    birdCall = innerText;
-                                    break;
-                            }
-                        }
-                        break;
-                    case XmlResourceParser.END_TAG:
-                        tagName = birdProfileXML.getName();
-                        if (tagName.equals("BIRD_PROFILE")) {
-                        /* Insert data into Table*/
-                            myDB.execSQL("REPLACE INTO " + BIRD_TABLE_NAME
-                                    + " (ID, SCIENTIFIC_NAME, BIRD_CALL)"
-                                    + " VALUES (" + id + ", '" + scientificName + "', '" + birdCall + "');");
 
-                            myDB.execSQL("INSERT OR IGNORE INTO " + BIRD_SEEN_NAME
-                                    + " (ID, SEEN)"
-                                    + " VALUES (" + id + ", 0);");
-                        }
-                        break;
-                }
-                eventType = birdProfileXML.next();
-            }
+            myDB.execSQL("DELETE FROM " + BIRD_SEEN_NAME + " WHERE ID NOT IN (SELECT ID FROM " + BIRD_TABLE_NAME+")");
+
         } catch (XmlPullParserException | IOException e) {
             e.printStackTrace();
         }
-
-        myDB.execSQL("DELETE FROM " + BIRD_SEEN_NAME + " WHERE ID NOT IN (SELECT ID FROM " + BIRD_TABLE_NAME+")");
-
         return myDB;
     }
 }
