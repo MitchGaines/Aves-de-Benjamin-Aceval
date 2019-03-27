@@ -1,5 +1,39 @@
 package com.avesyarboles.avesdebenjaminaceval;
 
+/*
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+public class MapViewFragment extends FragmentActivity implements OnMapReadyCallback {
+
+    private GoogleMap mMap;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.map_view);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        // Add a marker in Sydney, Australia, and move the camera.
+        LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+}*/
+
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -39,7 +73,7 @@ public class MapViewFragment extends Fragment {
         final View rootView = inflater.inflate(R.layout.map_view, container, false);
 
         mMapView = (MapView) rootView.findViewById(R.id.mapView);
-        final ImageButton returnButton = (ImageButton) rootView.findViewById(R.id.returnLocationButton);
+        //final ImageButton returnButton = (ImageButton) rootView.findViewById(R.id.returnLocationButton);
         mMapView.onCreate(savedInstanceState);
 
         mMapView.onResume(); // needed to get the map to display immediately
@@ -132,7 +166,7 @@ public class MapViewFragment extends Fragment {
                 googleMap.addMarker(new MarkerOptions().position(point12).title(title12).snippet(getString(R.string.point12Description) + "\n" + getString(R.string.map_description_label))).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_marker12));
                 googleMap.addMarker(new MarkerOptions().position(point13).title(title13).snippet(getString(R.string.point13Description) + "\n" + getString(R.string.map_description_label))).setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_marker13));
 
-                googleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+                /*googleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
                     @Override
                     public View getInfoWindow(Marker marker) {
                         return null;
@@ -142,8 +176,8 @@ public class MapViewFragment extends Fragment {
                     public View getInfoContents(Marker marker) {
                         //Get view from the layout file
                         Bundle bundle = new Bundle();
-                        View v = getLayoutInflater(bundle).inflate(R.layout.map_infowindow, null);
-
+                        //View v = getLayoutInflater(bundle).inflate(R.layout.map_infowindow, null);
+                        View v = getLayoutInflater(bundle).inflate(R.layout)
                         TextView titleTV = (TextView) v.findViewById(R.id.titleTV);
                         TextView descriptionTV = (TextView) v.findViewById(R.id.descriptionTV);
 
@@ -152,7 +186,7 @@ public class MapViewFragment extends Fragment {
 
                         return v;
                     }
-                });
+                });*/
 
                 googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                     @Override
@@ -219,12 +253,12 @@ public class MapViewFragment extends Fragment {
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPositionWetlands));
 
                 //set up button that will allow users to return to the wetlands on the map if they cannot find it
-                returnButton.setOnClickListener(new View.OnClickListener() {
+                /*returnButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPositionWetlands));
                     }
-                });
+                });*/
 
             }
         });
